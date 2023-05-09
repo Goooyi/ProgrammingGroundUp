@@ -19,8 +19,9 @@ _start:
 
     popl %ebx
     
-    addl %eax, %ebx 
+    subl %ebx, %eax 
 
+    movl %eax, %ebx
     movl $1, %eax
     int $0x80
 
